@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import ComponenteNavigation from "../components/Navigation.astro";
+
 
 const pageTitle = "Sobre mi.variable pagetitle";
 const identity = {
@@ -47,9 +49,12 @@ const ztextC = "uppercase";
   </head>
 
   <body>
-    <a href="/">Inicio</a>
-    <a href="/about/">Sobre mi</a>
-    <a href="/blog/">Blogs</a>
+	<!-- se reemplaza todo este bloque por Navigation:
+		<a href="/" > Inicio </a>
+		<a href="/about/">Sobre mi</a>
+		<a href="/blog/">Blogs</a>
+	 -->
+	 <ComponenteNavigation />
 
     <h1>Sobre mi</h1>
     <h2>... ¡y mi nuevo sitio Astro!</h2>

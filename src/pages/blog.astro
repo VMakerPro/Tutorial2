@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import ComponenteNavigation from "../components/Navigation.astro";
+
 const pageTitle = "Miii blog de Astro aprendizaje.variable pagetitle";
 ---
 
@@ -14,9 +16,12 @@ const pageTitle = "Miii blog de Astro aprendizaje.variable pagetitle";
   </head>
 
   <body>
-    <a href="/">Inicio</a>
-    <a href="/about/">Sobre mi</a>
-    <a href="/blog/">Blogs</a>
+	<!-- se reemplaza todo este bloque por Navigation:
+		<a href="/" > Inicio </a>
+		<a href="/about/">Sobre mi</a>
+		<a href="/blog/">Blogs</a>
+	 -->
+	 <ComponenteNavigation />
 
     <h1>Mi blog de Astro aprendizaje</h1>
     <p>Aquí es donde publicaré sobre mi viaje de aprendizaje Astro.</p>
