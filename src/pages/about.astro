@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 const pageTitle = "Sobre mi.variable pagetitle";
 const identity = {
   firstName: "Sarah",
@@ -19,9 +21,9 @@ const happy = true;
 const finished = false;
 const goal = 3;
 
-const skillColor = "navy";
-const fontWeight = "bold";
-const textC = "uppercase";
+const zskillColor = "navy";
+const zfontWeight = "bold";
+const ztextC = "uppercase";
 ---
 
 <html lang="en">
@@ -31,15 +33,15 @@ const textC = "uppercase";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
-    <style define:vars={{skillColor, fontWeight, textC}}>
+    <style define:vars={{zskillColor, zfontWeight, ztextC}}>
       h1{
         color: purple;
         font-size: 4rem;
       }
       .clase-skill{
-        color: var(--skillColor);
-        font-weight: var(--fontWeight);
-        text-transform:var(--textC) ;
+        color: var(--zskillColor);
+        font-weight: var(--zfontWeight);
+        text-transform:var(--ztextC) ;
       }
     </style>
   </head>
