@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css";
 import ComponenteNavigation from "../components/Navigation.astro";
+import ComponenteFooter from "../components/Footer.astro";
+
 const pageTitle = "PAGINA DE INICIO.variable pagetitle";
 ---
 
@@ -14,13 +16,14 @@ const pageTitle = "PAGINA DE INICIO.variable pagetitle";
   </head>
 
   <body>
-	<!-- se reemplaza todo este bloque por Navigation:
+    <!-- se reemplaza todo este bloque por Navigation:
 		<a href="/" > Inicio </a>
 		<a href="/about/">Sobre mi</a>
 		<a href="/blog/">Blogs</a>
 	 -->
-	 <ComponenteNavigation />
+    <ComponenteNavigation />
 
-    <h1>Tutorial dé Astro 2</h1>
+    <h1>Tutorial de Astro 2</h1>
+    <ComponenteFooter />
   </body>
 </html>
