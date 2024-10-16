@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import ComponenteNavigation from "../components/Navigation.astro";
 import ComponenteFooter from "../components/Footer.astro";
+import ComponenteHeader from "../components/CHeader.astro"
 
 const pageTitle = "PAGINA DE INICIO.variable pagetitle";
 ---
@@ -20,8 +21,10 @@ const pageTitle = "PAGINA DE INICIO.variable pagetitle";
 		<a href="/" > Inicio </a>
 		<a href="/about/">Sobre mi</a>
 		<a href="/blog/">Blogs</a>
-	 -->
+	 
     <ComponenteNavigation />
+    -->
+    <ComponenteHeader />
 
     <h1>Tutorial de Astro 2</h1>
     <ComponenteFooter />
