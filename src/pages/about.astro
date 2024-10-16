@@ -1,8 +1,8 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 import ComponenteNavigation from "../components/Navigation.astro";
-import ComponenteFooter from '../components/Footer.astro';
-
+import ComponenteFooter from "../components/Footer.astro";
+import ComponenteHeader from "../components/CHeader.astro";
 
 const pageTitle = "Sobre mi.variable pagetitle";
 const identity = {
@@ -36,26 +36,26 @@ const ztextC = "uppercase";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
-    <style define:vars={{zskillColor, zfontWeight, ztextC}}>
-      h1{
+    <style define:vars={{ zskillColor, zfontWeight, ztextC }}>
+      h1 {
         color: purple;
         font-size: 4rem;
       }
-      .clase-skill{
+      .clase-skill {
         color: var(--zskillColor);
         font-weight: var(--zfontWeight);
-        text-transform:var(--ztextC) ;
+        text-transform: var(--ztextC);
       }
     </style>
   </head>
 
   <body>
-	<!-- se reemplaza todo este bloque por Navigation:
+    <!-- se reemplaza todo este bloque por Navigation:
 		<a href="/" > Inicio </a>
 		<a href="/about/">Sobre mi</a>
 		<a href="/blog/">Blogs</a>
 	 -->
-	 <ComponenteNavigation />
+    <ComponenteHeader />
 
     <h1>Sobre mi</h1>
     <h2>... ¡y mi nuevo sitio Astro!</h2>
@@ -99,7 +99,9 @@ const ztextC = "uppercase";
         <p>Mi objetivo no son 3 días.</p>
       )
     }
-	<ComponenteFooter />
-
+    <ComponenteFooter />
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>
