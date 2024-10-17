@@ -1,36 +1,12 @@
 ---
-import "../styles/global.css";
-import ComponenteNavigation from "../components/Navigation.astro";
-import ComponenteFooter from "../components/Footer.astro";
-import ComponenteHeader from "../components/CHeader.astro";
-
-const pageTitle = "PAGINA DE INICIO.variable pagetitle";
+import IndexLayout from '../layouts/LayoutIndex.astro';
+const pageTitle = "SLOT. Index ";
 ---
+<!-- 
+' se genera la pagina index.astro a partir del archivo plantilla ArchivoLayout01'
+-->
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-  </head>
 
-  <body>
-    <!-- se reemplaza todo este bloque por Navigation:
-		<a href="/" > Inicio </a>
-		<a href="/about/">Sobre mi</a>
-		<a href="/blog/">Blogs</a>
-	 
-    <ComponenteNavigation />
-    -->
-    <ComponenteHeader />
-
-    <h1>Tutorial de Astro 2</h1>
-    <ComponenteFooter />
-
-    <script>
-      import "../scripts/menu.js";
-    </script>
-  </body>
-</html>
+<IndexLayout pageTitle={pageTitle}>
+  <h2 style="color: blueviolet;">IndexLayout.subtítulo del blog</h2>
+</IndexLayout>
